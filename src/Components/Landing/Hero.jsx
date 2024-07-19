@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import HeroImg from '../../../public/Images/HeroImg.svg';
 import { IoMdArrowForward } from "react-icons/io";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 function Hero() {
   const texts = ["Faster", "Better", "Smarter"];
@@ -19,10 +21,16 @@ function Hero() {
     return () => clearInterval(intervalId);
   }, []);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 2000, // Duration of animations
+    });
+  }, []);
+
   return (
     <div className='min-h-screen flex items-center justify-between md:w-4/5 m-auto font-pop'>
-      <div className='flex flex-col md:flex-row items-center '>
-        <div className='text-center mt-20 md:mt-0 md:text-left md:w-1/2'>
+      <div className='flex flex-col md:flex-row items-center p-2 md:p-0'>
+        <div className='text-center mt-20 md:mt-0 md:text-left md:w-1/2' data-aos='fade-down'>
           <h1 className='text-4xl font-bold mb-4 text-[#404660]  pop'>
             Learning{' '}
             <span
@@ -37,7 +45,7 @@ function Hero() {
             Join Waitlist <IoMdArrowForward />
           </button>
         </div>
-        <div className='mt-8 md:mt-0 md:ml-8 md:w-1/2'>
+        <div className='mt-8 md:mt-0 md:ml-8 md:w-1/2' data-aos='fade-right'>
           <img src={HeroImg} alt="Hero Image" className='w-full h-auto' />
         </div>
       </div>

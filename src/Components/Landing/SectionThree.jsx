@@ -7,7 +7,7 @@ function SectionThree() {
     <div>
        <Section
       imageSrc={ImageOne}
-      heading="Learning and reLearning"
+      heading="relearning tools"
       paragraph="You can easily find tutors that can help in teaching and tutoring you in any subject you are not performing well"
     />
     </div>
