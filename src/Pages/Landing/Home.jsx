@@ -5,6 +5,7 @@ import SubHero from '../../Components/Landing/SubHero'
 import SectionOne from '../../Components/Landing/SectionOne'
 import SectionTwo from '../../Components/Landing/SectionTwo'
 import SectionThree from '../../Components/Landing/SectionThree'
+import TestimonialCarousel from '../../Components/Landing/TestimonialCard'
 
 function Home() {
   return (
@@ -26,6 +27,9 @@ function Home() {
       </div>
       <div>
         <SectionThree />
+      </div>
+      <div>
+        <TestimonialCarousel />
       </div>
     </div>
   )
