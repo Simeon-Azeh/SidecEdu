@@ -6,6 +6,8 @@ import SectionOne from '../../Components/Landing/SectionOne'
 import SectionTwo from '../../Components/Landing/SectionTwo'
 import SectionThree from '../../Components/Landing/SectionThree'
 import TestimonialCarousel from '../../Components/Landing/TestimonialCard'
+import SectionFour from '../../Components/Landing/SectionFour'
+import FAQ from '../../Components/Landing/FAQ'
 
 function Home() {
   return (
@@ -30,6 +32,12 @@ function Home() {
       </div>
       <div>
         <TestimonialCarousel />
+      </div>
+      <div>
+        <SectionFour />
+      </div>
+      <div>
+        <FAQ />
       </div>
     </div>
   )
