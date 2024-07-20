@@ -9,6 +9,7 @@ import TestimonialCarousel from '../../Components/Landing/TestimonialCard'
 import SectionFour from '../../Components/Landing/SectionFour'
 import FAQ from '../../Components/Landing/FAQ'
 import Opportunities from '../../Components/Landing/Opportuinities'
+import OurParners from '../../Components/Landing/OurParners'
 
 function Home() {
   return (
@@ -42,6 +43,9 @@ function Home() {
       </div>
       <div>
         <Opportunities />
+      </div>
+      <div>
+        <OurParners />
       </div>
     </div>
   )
