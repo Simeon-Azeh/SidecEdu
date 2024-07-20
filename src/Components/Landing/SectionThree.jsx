@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from './Section';
-import ImageOne from '../../../public/Images/ImageOne.png'; // Adjust the path as necessary
+import ImageOne from '../../../public/Images/ImageFour.png'; // Adjust the path as necessary
 
 function SectionThree() {
   return (
