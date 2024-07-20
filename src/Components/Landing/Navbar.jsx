@@ -29,7 +29,7 @@ function Navbar() {
           <Link to="/" className="border-b-2 border-white border-solid hover:border-[#9835ff]">Home</Link>
           <Link to="/about" className="border-b-2 border-white border-solid hover:border-[#9835ff]">About</Link>
           <Link to="/team" className="border-b-2 border-white border-solid hover:border-[#9835ff]">Team</Link>
-          <Link to="/store" className="border-b-2 border-white border-solid hover:border-[#9835ff]">Store</Link>
+         
           <Link to="/contact" className="border-b-2 border-white border-solid hover:border-[#9835ff]">Contact</Link>
         </div>
         <div className="hidden md:flex space-x-4">
@@ -58,7 +58,6 @@ function Navbar() {
           <Link to="/" className="text-[#404660] font-pop font-medium text-[14px]" onClick={() => setIsDrawerOpen(false)}>Home</Link>
           <Link to="/about" className="text-[#404660] font-pop font-medium text-[14px]" onClick={() => setIsDrawerOpen(false)}>About</Link>
           <Link to="/team" className="text-[#404660] font-pop font-medium text-[14px]" onClick={() => setIsDrawerOpen(false)}>Team</Link>
-          <Link to="/store" className="text-[#404660] font-pop font-medium text-[14px]" onClick={() => setIsDrawerOpen(false)}>Store</Link>
           <Link to="/contact" className="text-[#404660] font-pop font-medium text-[14px]" onClick={() => setIsDrawerOpen(false)}>Contact</Link>
           <Link to="/login" className="text-[#404660] font-pop font-medium text-[14px]" onClick={() => setIsDrawerOpen(false)}>Login</Link>
           <Link to="/get-started" className="bg-[#9835ff] text-white px-4 py-2 rounded font-pop" onClick={() => setIsDrawerOpen(false)}>Get Started</Link>
