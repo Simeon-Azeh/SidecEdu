@@ -8,6 +8,7 @@ import SectionThree from '../../Components/Landing/SectionThree'
 import TestimonialCarousel from '../../Components/Landing/TestimonialCard'
 import SectionFour from '../../Components/Landing/SectionFour'
 import FAQ from '../../Components/Landing/FAQ'
+import Opportunities from '../../Components/Landing/Opportuinities'
 
 function Home() {
   return (
@@ -38,6 +39,9 @@ function Home() {
       </div>
       <div>
         <FAQ />
+      </div>
+      <div>
+        <Opportunities />
       </div>
     </div>
   )

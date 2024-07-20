@@ -1,5 +1,6 @@
-import React from 'react';
-import { Collapse } from 'antd';
+import React, { useEffect, useState } from "react"; 
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 const data = [
   { key: '1', question: 'What is sidec all about?', answer: 'Sidec is a web app that allows students to practice and know how prepared they are for a National Exam.' },
@@ -11,25 +12,44 @@ const data = [
   { key: '7', question: 'How do I create an account?', answer: 'Click the “Sign Up” or “Register” button and follow the simple steps to create your account. You’ll need to provide some basic information.' },
 ];
 
-const items = data.map(faq => ({
-  key: faq.key,
-  label: faq.question,
-  children: <p>{faq.answer}</p>,
-}));
+const FAQ = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
 
-function FAQ() {
-  const onChange = (key) => {
-    console.log(key);
+  const toggleAccordion = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
   };
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duration of animations
+    });
+  }, []);
+
   return (
-    <div className='h-screen w-[100%] md:w-4/5 mx-auto p-8 md:px-0 py-20 pb-10 font-poppins' data-aos="fade-up">
-        <div className=''>
-        <h1 className='text-2xl font-semibold text-[#404660] mb-4'>Frequently Asked Questions</h1>
-        <Collapse items={items} defaultActiveKey={['1']} onChange={onChange} />
+    <div className="">
+        <div className=' w-[100%] md:w-4/5 mx-auto py-8 h-[100%] font-poppins px-8 md:px-0'>
+        <h1 className='text-2xl mb-4 text-[#404660] font-semibold ' data-aos='fade-down'>Frequently Asked Questions</h1>
+        {data.map((item, index) => (
+        <div key={item.key} className="border-b border-gray-200" data-aos='fade-up'>
+          <button
+            className="w-full text-left px-4 py-3 bg-transparent text-[#404660] font-medium hover:text-[#9835ff] focus:outline-none"
+            onClick={() => toggleAccordion(index)}
+          >
+            <div className="flex justify-between items-center">
+              <span>{item.question}</span>
+              <span>{activeIndex === index ? '-' : '+'}</span>
+            </div>
+          </button>
+          {activeIndex === index && (
+            <div className="px-4 py-3 text-gray-400 text-[14px]">
+              {item.answer}
+            </div>
+          )}
+        </div>
+      ))}
         </div>
     </div>
   );
-}
+};
 
 export default FAQ;
