@@ -10,6 +10,7 @@ import SectionFour from '../../Components/Landing/SectionFour'
 import FAQ from '../../Components/Landing/FAQ'
 import Opportunities from '../../Components/Landing/Opportuinities'
 import OurParners from '../../Components/Landing/OurParners'
+import NewsletterSection from '../../Components/Landing/NewsletterSection'
 
 function Home() {
   return (
@@ -46,6 +47,9 @@ function Home() {
       </div>
       <div>
         <OurParners />
+      </div>
+      <div>
+        <NewsletterSection />
       </div>
     </div>
   )
