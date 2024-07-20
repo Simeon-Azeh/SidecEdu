@@ -11,6 +11,8 @@ import FAQ from '../../Components/Landing/FAQ'
 import Opportunities from '../../Components/Landing/Opportuinities'
 import OurParners from '../../Components/Landing/OurParners'
 import NewsletterSection from '../../Components/Landing/NewsletterSection'
+import Footer from '../../Components/Landing/Footer'
+
 
 function Home() {
   return (
@@ -50,6 +52,9 @@ function Home() {
       </div>
       <div>
         <NewsletterSection />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   )

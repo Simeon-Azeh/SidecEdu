@@ -3,7 +3,7 @@ import NewsletterBg from '../../../public/Images/NewsletterBg.png'; // Ensure yo
 
 function NewsletterSection() {
   return (
-  <div className='bg-white w-[100%] md:w-4/5 mx-auto px-8 md:px-0'>
+  <div className='bg-white w-[100%] md:w-4/5 mx-auto px-8 md:px-0 mb-8 rounded'>
       <div 
       className='w-full font-poppins bg-cover md:bg-center bg-no-repeat' 
       style={{ backgroundImage: `url(${NewsletterBg})` }}
