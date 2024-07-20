@@ -9,8 +9,8 @@ function NewsletterSection() {
       style={{ backgroundImage: `url(${NewsletterBg})` }}
     >
       <div className='relative w-full md:w-3/5 mx-auto text-center text-white font-poppins py-8 px-4 md:px-0'>
-        <h2 className='text-xl font-semibold text-[#404660] mb-4'>Ready to get started?</h2>
-        <p className='mb-6 text-gray-500'>Join our waitlist to be the first to know when we launch.</p>
+        <h2 className='text-xl font-semibold text-[#404660] mb-0 md:mb-4'>Ready to get started?</h2>
+        <p className='mb-2 text-[12px] md:text-[16px] md:mb-6 text-gray-500'>Join our waitlist to be the first to know when we launch.</p>
         <div className='flex flex-col md:flex-row gap-4 justify-center items-center'>
           <input 
             type='email' 
