@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../../Components/Landing/Navbar'
 import ContactHero from '../../Components/Landing/ContactHero'
 import ContactItem from '../../Components/Landing/ContactItem'
 
 function Contact() {
+    useEffect(() => {
+        document.title = "Contact Us"
+    })
   return (
     <div>
      <div>

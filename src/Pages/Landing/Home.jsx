@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../../Components/Landing/Navbar'
 import Hero from '../../Components/Landing/Hero'
 import SubHero from '../../Components/Landing/SubHero'
@@ -15,6 +15,9 @@ import Footer from '../../Components/Landing/Footer'
 
 
 function Home() {
+    useEffect(() => {
+        document.title = "Home"
+    })
   return (
     <div>
       <div className=''>

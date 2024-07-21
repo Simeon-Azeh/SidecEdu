@@ -9,7 +9,7 @@ import CTOImage from '../../../public/Images/Junior.jpg';
 import CFOImage from '../../../public/Images/olannni.png';
 import COOImage from '../../../public/Images/rose.png';
 import CMOImage from '../../../public/Images/sebbb.png';
-import HRImage from '../../../public/Images/christian.png';
+import HRImage from '../../../public/Images/Mike.png';
 
 const teamMembers = [
   { name: 'Simeon Azeh K.', role: 'Co-Founder & Frontend dev', description: 'Simeon is passionate Co-founder and frontend developer at ALU Rwanda. With over two years of experience in software development for students, Simeon has been incharge of building our entire frontend framework using modern tech like Reactjs. He has a deep understanding of user experience and design. His diverse skill set includes technical expertise and proficiency in design and branding, attention to details, and management.', image: CEOImage, linkedin: '#', facebook: '#', instagram: '#' },

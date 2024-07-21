@@ -37,7 +37,8 @@ function OurPartners() {
         </div>
         <div className='mt-8 text-center'>
           <p className='mb-4 text-lg text-[#404660]'>We are open to partnership and sponsorship opportunities. Join us in our mission to make a difference!</p>
-          <button className='bg-[#9835ff] text-white py-2 px-4 rounded hover:translate-y-[-5px] duration-300 flex items-center gap-2 m-auto'><MdCall /> Schedule a call</button>
+          <a href="https://calendly.com/s-kongnyuy-alustudent/sidec-partnership" target="_blank" rel="noopener noreferrer"> <button className='bg-[#9835ff] text-white py-2 px-4 rounded hover:translate-y-[-5px] duration-300 flex items-center gap-2 m-auto'><MdCall /> Schedule a call</button></a>
+         
         </div>
       </div>
     </div>
